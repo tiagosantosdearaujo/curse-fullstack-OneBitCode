@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 08</title>
+</head>
+<body>
+    <p>
+        let spaceship = prompt("What's the spaceship name?")<br>
+        let secretWord = prompt("Which character would you like to encode?")<br>
+        let newSpaceship = ""<br><br>
+        
+        for(let i = 0; i < spaceship.length;i++){<br>
+            if(spaceship[i] == secretWord){<br>
+                newSpaceship += "*"<br>
+            } else{<br>
+                newSpaceship += spaceship[i]<br>
+            }<br>
+        } <br>
+        alert(`The spaceship codename is ${newSpaceship}`)<br> 
+    </p>
+</body>
+<script src="./practice.js"></script>
+</html>

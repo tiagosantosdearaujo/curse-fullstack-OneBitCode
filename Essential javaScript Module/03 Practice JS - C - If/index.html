@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 03</title>
+</head>
+<body>
+    <p>
+        alert("Welcome a SpaceShip101")<br>
+        let pilotName = prompt("What is the pilot`s name?")<br>
+        let travelVelocity = prompt("What's velocity you would like to travel in a SpaceShip101?")<br>
+        let confirmationVelocity = confirm(`We will travel at a velocity of ${travelVelocity}`+ "km/h. Do you confirm?")<br><br>
+    
+        if(travelVelocity < 0){<br>
+            alert("The SpaceShip101 is stopped and not going anywhere")<br>
+        } else if(travelVelocity < 40){<br>
+            alert("you are slow, go faster")<br>
+        } else if(travelVelocity >= 40 && travelVelocity <= 80){<br>
+            alert("Sounds good, keep up the velocity")<br>
+        } else if(travelVelocity >= 80 && travelVelocity <= 100){<br>
+            alert("high velocity, slow down please")<br>
+        } else {<br>
+            alert("Dangerous speed, auto pilot active")<br>
+        }<br>
+    </p>
+</body>
+<script src="./practice.js"></script>
+</html>

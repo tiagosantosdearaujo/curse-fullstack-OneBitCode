@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 07</title>
+</head>
+<body>
+    <p>
+        let warpCount = 0<br>
+        let chosenOption = ""<br><br>
+
+        let spaceship = prompt("Enter the ship's name")<br><br>
+
+        chosenOption = prompt("Want to go into warp drive?\n1- Yes\n2- No")<br><br>
+
+        while(chosenOption == 1){<br>
+            warpCount += 1<br>
+            chosenOption = prompt("Do you want to make the next space warp?\n1- Yes\n 2-No")<br>
+        }<br>
+        alert(`Nave: ${spaceship}.\nAmount of space warp: ${warpCount}.`)<br>    
+    </p>
+</body>
+<script src="./practice.js"></script>
+</html>

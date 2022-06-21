@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 06</title>
+</head>
+<body>
+    <p>
+        let distance = prompt("Entry with your distance in light-years.")<br>
+        let unitOptions = prompt("Which unit do you want to convert to?\npc (Parsec)\nau (Astronomical unit)\nkm (Kilometers)")<br><br>
+
+        switch(unitOptions){<br>
+            case "pc":<br>
+                let typePc = "light-years -> parsec"<br>
+                let valueInPc = distance * 0.306601<br>
+                alert(`Your distance in light-years is ${distance}.\nYou chose to convert the distance to ${typePc}.\nYour distance in parsec is ${valueInPc}.`)<br>
+                break<br>
+            case "au":<br>
+                let typeAu = "light-years -> Astromical unit"<br>
+                let valueInAu = distance * 63241.1<br>
+                alert(`Your distance in light-years is ${distance}.\nYou chose to convert the distance to ${typeAu}.\nYour distance in Astromical unit is ${valueInAu}.`)<br>
+                break<br>
+            case "km":<br>
+                let typeKm = "light-years -> Kilometers"<br>
+                valueInKm = distance * (9.5 * Math.pow(10,12))<br>
+                alert(`Your distance in light-years is ${distance}.\nYou chose to convert the distance to ${typeKm}.\nYour distance in Kilometers is ${valueInKm}.`)<br>
+                break<br>
+            default:<br>
+                alert("Error")<br>
+        }<br>
+    </p>
+</body>
+<script src="./practice.js"></script>
+</html>
