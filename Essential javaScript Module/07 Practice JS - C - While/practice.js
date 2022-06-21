@@ -1,12 +1,12 @@
-let spaceship = prompt("What's the spaceship name?")
-let secretWord = prompt("Which character would you like to encode?")
-let newSpaceship = ""
+let warpCount = 0
+        let chosenOption = ""
 
-for(let i = 0; i<spaceship.length;i++){
-    if(spaceship[i] == secretWord){
-        newSpaceship += "*"
-    } else{
-        newSpaceship += spaceship[i]
-    }
-} 
-alert(`The spaceship codename is ${newSpaceship}`)
+        let spaceship = prompt("Enter the ship's name")
+
+        chosenOption = prompt("Want to go into warp drive?\n1- Yes\n2- No")
+
+        while(chosenOption == 1){
+            warpCount += 1
+            chosenOption = prompt("Do you want to make the next space warp?\n1- Yes\n 2-No")
+        }
+        alert(`Nave: ${spaceship}.\nAmount of space warp: ${warpCount}.`)
